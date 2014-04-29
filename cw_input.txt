@@ -1,0 +1,25 @@
+# cw_input.txt
+# Input to City Walk program
+
+20&S, turn_right
+21&B, stop
+3&X, turn_left
+3&C, go_back
+f&15, go_north
+1&X, go_east
+1&A, go_north
+30&D, turn_left
+35&D, turn_left
+35&T, turn_left
+30&T, go_east
+198&A, go_west
+198&Y, go_south
+153&S, go_back
+20&X, go_south
+21&Y, go_east
+
+# Three start points, one for each of the terminating conditions.
+# Uncomment one to perform its walk
+20&B, start_west # start checkpoint for successful walk
+# 15&z, start_east # start checkpoint for out-of-bounds walk
+# 30&U, start_east # start checkpoint for infinite-loop walk
