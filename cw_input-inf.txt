@@ -1,6 +1,6 @@
-# cw_input.txt
+# cw_input-inf.txt
 # Input to City Walk program
-# which stays in bounds and encounters a stopping point.
+# which encounters the start of an infinite loop (has no stop point)
 
 20&S, turn_right
 21&B, stop
@@ -21,6 +21,6 @@ f&15, go_north
 
 # Three start points, one for each of the terminating conditions.
 # Uncomment one to perform its walk
-20&B, start_west # start checkpoint for successful walk
+# 20&B, start_west # start checkpoint for successful walk
 # 15&z, start_east # start checkpoint for out-of-bounds walk
-# 30&U, start_east # start checkpoint for infinite-loop walk
+30&U, start_east # start checkpoint for infinite-loop walk

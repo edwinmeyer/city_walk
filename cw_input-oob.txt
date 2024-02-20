@@ -1,6 +1,7 @@
-# cw_input.txt
+# cw_input-oob.txt
 # Input to City Walk program
-# which stays in bounds and encounters a stopping point.
+# which goes out of bounds (has an instruction which goes beyond "city limits" without
+# encountering a stop or turn instruction.)
 
 20&S, turn_right
 21&B, stop
@@ -21,6 +22,6 @@ f&15, go_north
 
 # Three start points, one for each of the terminating conditions.
 # Uncomment one to perform its walk
-20&B, start_west # start checkpoint for successful walk
-# 15&z, start_east # start checkpoint for out-of-bounds walk
+# 20&B, start_west # start checkpoint for successful walk
+15&z, start_east # start checkpoint for out-of-bounds walk
 # 30&U, start_east # start checkpoint for infinite-loop walk
